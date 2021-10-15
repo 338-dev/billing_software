@@ -300,7 +300,7 @@ class Bill_App:
        op=messagebox.askyesno("Save Bill","Do You Want to save the bill?")
        if op>0:
             self.bill_data=self.txtarea.get('1.0',END)
-            f1=open("bills/"+str(self.bill_no.get())+".txt","w")
+            f1=open("E:\minor_p\cal" + str(self.bill_no.get())+".txt","w")
             f1.write(self.bill_data)
             f1.close()
        else:
